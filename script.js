@@ -22,6 +22,7 @@ for (let key in symbolsObj) {
 
 function append(myValue) {
     //IE support
+    myValue = myValue.innerHTML;
     const myField = document.getElementById("code")
     if (document.selection) {
         myField.focus();
